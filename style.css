@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;1,200&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container1{
+    display: flex;
+}
+.sidebar1{
+    background-color:rgb(202, 198, 198);
+    /* width: 400px; */
+    height: 800px;
+    transition: transform 0.4s ease-in;
+    position: absolute;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.sidebargo{
+    transform: translate(-300px, 0px);
+    position: absolute;
+}
+
+.sidebar1 nav{
+    display: flex;
+    justify-content: space-between;
+}
+.material-symbols-outlined{
+    cursor: pointer;
+}
+.cross{
+    cursor: pointer;
+    position: absolute;
+    left: 0px;
+    margin-left: 216px;
+    transition: transform 0.4s;
+}
+.menu{
+    position: absolute;
+    left: 0px;
+
+}
+.sidebar1 nav #active{
+    color: rgb(50, 50, 63);
+    text-decoration: underline;
+}
+.sidebar1 nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 20px 50px;
+}
+.sidebar1 nav li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+.main{
+    /* background-color: yellow; */
+    width: 85%;
+    margin-left: 150px;
+}
+.infocontainer{
+    /* background-color: rgb(255, 189, 189); */
+    height: 58vh;
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.devinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+}
+.about{
+    font-size: 40px;
+}
+.moreabout{
+    font-size: 30px;
+    margin-top: 15px;
+}
+.buttons{
+    margin-top: 35px;
+}
+.buttons button{
+    padding: 8px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0px 5px;
+    font-size: 20px;
+    background-color:#4ea0c1;
+    font-weight: bold;
+    color: white;
+}
+.buttons button:hover{
+    color: #4ea0c1;
+    transition: 1s;
+    background-color: rgb(255, 255, 255);
+}
+.devpic img{
+    height: 58vh;
+}
+.contactform{
+    padding: 40px 30px;
+}
+.contactform .mb-3{
+    display: flex;
+    flex-direction: column;
+}
+.contactform h1{
+    text-align: center;
+    margin: 20px;
+}
+.contactform .form-label{
+    font-size: 30px;
+}
+.contactform .email{
+    font-size: 20px;
+    border-radius: 25px;
+    margin-left: 12px;
+    width: 40vw;
+    padding: 10px;
+}
+.contactform .btn{
+    border-radius: 26px;
+    padding: 5px 29px;
+    font-size: 21px;
+}
+.contactform .btn:hover{
+    color: #4ea0c1;
+    transition: 1s;
+    background-color: rgb(255, 255, 255); 
+}
+.container-sm{
+    margin: 20px;
+}
+.container-sm h1{
+    margin: 29px;
+    text-align: center;
+}
+.blogitem button{
+    border-radius: 26px;
+    padding: 2px 29px;
+    font-size: 21px;  
+}
+.blogitem button:hover{
+    color: #4ea0c1;
+    transition: 1s;
+    background-color: rgb(255, 255, 255);
+}
+.blogitem{
+    margin-bottom: 20px;
+}
+ 
+
+@media (max-width:1200px) {
+    .devpic{
+        display: none;
+    }
+    
+}
+@media (max-width:1200px) {
+    .hello{
+        font-size: 50px;
+    }
+    .name{
+        font-size: 40px;
+    }
+    .about{
+        font-size: 30px;
+    }
+    .moreabout{
+        font-size: 20px;
+    }
+}
+@media (max-width:900px) {
+    .hello{
+        font-size: 40px;
+    }
+    .name{
+        font-size: 30px;
+    }
+    .about{
+        font-size: 20px;
+    }
+    .moreabout{
+        font-size: 16px;
+    }
+    .buttons button{
+        padding: 3px 9px;
+        font-size: 17px;
+    }
+    .sidebar1 nav li {
+        list-style: none;
+        font-size: 26px;
+        padding: 17px 19px;
+    }
+    .cross {
+        cursor: pointer;
+        position: absolute;
+        left: 0px;
+        margin-left: 140px;
+        transition: transform 0.4s;
+    }
+    .sidebar1 {
+        background-color: rgb(202, 198, 198);
+        /* width: 400px; */
+        height: 600px;
+        transition: transform 0.4s ease-in;
+        position: absolute;
+    }
+}
+@media (max-width:500px) {
+    .hello{
+        font-size: 30px;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .about{
+        font-size: 15px;
+    }
+    .moreabout{
+        font-size: 13px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .buttons button {
+        padding: 2px 6px;
+        font-size: 9px;
+    }
+    .sidebar1 nav li {
+        list-style: none;
+        font-size: 21px;
+        padding: 14px 15px;
+    }
+    .cross {
+        cursor: pointer;
+        position: absolute;
+        left: 0px;
+        margin-left: 107px;
+        transition: transform 0.4s;
+    }
+    .sidebar1 {
+        background-color: rgb(202, 198, 198);
+        /* width: 400px; */
+        height: 700px;
+        transition: transform 0.4s ease-in;
+        position: absolute;
+    }
+    
+}
